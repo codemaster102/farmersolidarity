@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding-left: 10%;
+    padding-bottom: 20%;
+}
+
+.box{
+    height: 200px;
+    color: black;
+    border: 2px solid black;
+    position: relative;
+    cursor: pointer;
+    block-size: fit-content;
+    height: 100%;
+    background-size: cover;
+}
+
+.box h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.box p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.box:hover{
+    transform: scale(1.1)
+}
+
+.box-1{
+    background-image: url(../img/canada_protest.jpeg);
+}
+
+.box-2{
+    background-image: url(../img/britain_protests.webp);
+}
+
+.box-3{
+    background-image: url(../img/america_protests.jpg);
+}
+
+.box-4{
+    background-image: url(../img/korea_protests.jpg);
+}
+
+.box-5{
+    background-image: url(../img/brazil_india.jpg);
+}
+
+.box-6{
+    background-image: url(../img/italy_protests.jpg);
+}
+
+@media screen and (max-width: 768px){
+    *{
+        overflow-x: hidden;
+    }
+}
